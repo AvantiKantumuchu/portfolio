@@ -15,7 +15,7 @@ class App extends Component{
     render() {
         return( <div>
         <img src = {profile} alt= 'profile' className ='profile'/>
-        <div><h2>Avanti Kantumuchu</h2>{ this.state.displayBio ? <Title/>: null} </div>
+        <div><h2>Avanti</h2>{ this.state.displayBio ? <Title/>: null} </div>
         { this.state.displayBio ? ( <div><h6>Experienced Software Developer with a demonstrated history of working in the software and marketing industry. Skilled in emerging front-end Javascript frameworks like React, Vue and Angular, Databases, HTML, and Agile and Waterfall Methodologies. Strong engineering professional with a Master's degree focused in Computer Science from Bradley University. </h6><button onClick = {this.toggleDisplayBio}>Showless</button></div>) : (<div><button onClick = {this.toggleDisplayBio}>Readmore</button></div>) }
         <Projects/>
         <SocialProfiles/>
